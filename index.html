@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- css files -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="categories"></div>
+	<div id="bookmarks"></div>
+	<div id="note"></div>
+	<div id="form">
+		<div class="form-group">
+			<label for="title_input">Title</label>
+			<input type="text" id="title_input" name="title_input" placeholder="Enter Title">
+		</div>
+		<div class="form-group">
+			<label for="note_input">Note</label>
+			<input type="text" id="note_input" name="note_input" placeholder="Enter notes">
+		</div>
+		<div class="form-group">
+			<label for="title_input">Category</label>
+			<div class="autocomplete">
+				<input type="text" id="category_input" placeholder="Enter Category">
+			</div>
+		</div>
+		<span id="error">Please fill both the fields</span>
+		<p id="add">Add</p>
+	</div>
+	<p id="addToBookmark" class="addToBookmark">Add Bookmark</p>
+	<script src="app.js"></script>
+</body>
+</html>
